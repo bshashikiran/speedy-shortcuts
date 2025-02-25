@@ -67,5 +67,6 @@
   },
   "devDependencies": {
     "@types/vscode": "^1.77.0"
-  }
+  },
+  "icon": "images/shift.png"
 }
