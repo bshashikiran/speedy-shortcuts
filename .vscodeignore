@@ -1,0 +1,14 @@
+.vscode/**
+.vscode-test/**
+test/**
+.gitignore
+.yarnrc
+vsc-extension-quickstart.md
+**/jsconfig.json
+**/*.map
+**/eslint.config.mjs
+**/.vscode-test.*
+node_modules
+DEVNOTES.md
+package-lock.json
+speedy-shortcuts-0.0.1.vsix

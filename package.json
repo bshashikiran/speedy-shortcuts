@@ -1,0 +1,54 @@
+{
+  "name": "speedy-shortcuts",
+  "displayName": "Speedy Shortcuts",
+  "description": "Boost productivity with quick double-tap shortcuts",
+  "version": "0.0.1",
+  "publisher": "bshashikiran",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "main": "./src/extension.js",
+  "categories": ["Keymaps", "Other"],
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [
+      {
+        "command": "speedyShortcuts.doubleTap.shift",
+        "title": "Double Tap Shift - Open Global Search"
+      },
+      {
+        "command": "speedyShortcuts.doubleTap.ctrl",
+        "title": "Double Tap Ctrl - Open Command Palette"
+      },
+      {
+        "command": "speedyShortcuts.doubleTap.alt",
+        "title": "Double Tap Alt - Open File Search"
+      }
+    ],
+    "keybindings": [
+      {
+        "key": "shift shift",
+        "command": "speedyShortcuts.doubleTap.shift",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl ctrl",
+        "command": "speedyShortcuts.doubleTap.ctrl",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt alt",
+        "command": "speedyShortcuts.doubleTap.alt",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "echo 'No TypeScript used'",
+    "test": "echo 'No tests configured'",
+    "prepublish": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.77.0"
+  }
+}
