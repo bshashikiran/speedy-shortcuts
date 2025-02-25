@@ -8,8 +8,25 @@
     "vscode": "^1.77.0"
   },
   "main": "./src/extension.js",
-  "categories": ["Keymaps", "Other"],
-  "activationEvents": ["onStartupFinished"],
+  "categories": [
+    "Keymaps",
+    "Other"
+  ],
+  "keywords": [
+    "shortcuts",
+    "keyboard",
+    "productivity",
+    "double-tap",
+    "vscode",
+    "quick access",
+    "fast navigation",
+    "hotkeys",
+    "workflow",
+    "developer tools"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "contributes": {
     "commands": [
       {
