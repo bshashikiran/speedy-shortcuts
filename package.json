@@ -30,21 +30,32 @@
   "activationEvents": [],
   "main": "./src/extension.js",
   "contributes": {
+    "commands": [
+      {
+        "command": "speedyShortcuts.doubleTap.shift",
+        "title": "Double Tap Shift - Open Global Search"
+      },
+      {
+        "command": "speedyShortcuts.doubleTap.ctrl",
+        "title": "Double Tap Ctrl - Open Command Palette"
+      },
+      {
+        "command": "speedyShortcuts.doubleTap.alt",
+        "title": "Double Tap Alt - Open Quick Open with Selection"
+      }
+    ],
     "keybindings": [
       {
-        "command": "workbench.action.findInFiles",
         "key": "shift shift",
-        "mac": "shift shift"
+        "command": "speedyShortcuts.doubleTap.shift"
       },
       {
-        "command": "workbench.action.quickOpen",
-        "key": "alt alt",
-        "mac": "alt alt"
-      },
-      {
-        "command": "workbench.action.showCommands",
         "key": "ctrl ctrl",
-        "mac": "ctrl ctrl"
+        "command": "speedyShortcuts.doubleTap.ctrl"
+      },
+      {
+        "key": "alt alt",
+        "command": "speedyShortcuts.doubleTap.alt"
       }
     ]
   },
